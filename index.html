@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORLD CLOCK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header role="banner" aria-label="Application header">
+  <div class="brand" tabindex="0" aria-label="World Clock Application Brand">World Clock</div>
+  <button class="theme-toggle" aria-label="Toggle Dark/Light Theme" title="Toggle Dark/Light Theme" id="themeToggle" type="button">
+    <span class="material-icons" aria-hidden="true" id="themeIcon">dark_mode</span>
+  </button>
+</header>
+
+<button aria-label="Toggle Navigation Menu" class="sidebar-toggle" id="sidebarToggle" title="Toggle Navigation Menu" type="button">
+  <span class="material-icons" aria-hidden="true">menu</span>
+</button>
+
+<aside class="sidebar" role="navigation" aria-label="City timezones navigation" id="sidebar" tabindex="-1">
+  <div class="sidebar-header" id="sidebarHeader">Select Cities</div>
+  <nav class="cities-list" aria-live="polite" id="citiesList" tabindex="0">
+  </nav>
+</aside>
+
+<main class="content" id="mainContent" tabindex="0" role="main" aria-label="World Clocks Display Area" aria-live="polite" aria-atomic="true">
+</main>
+
+<footer role="contentinfo" aria-label="Application footer">
+  <div class="footer-left">
+    <span>© 2024 World Clock App</span>
+  </div>
+  <div class="footer-right">
+    <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub Repository" class="social-link">
+      <span class="material-icons">code</span>
+    </a>
+    <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter Profile" class="social-link">
+      <span class="material-icons">twitter</span>
+    </a>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
+
