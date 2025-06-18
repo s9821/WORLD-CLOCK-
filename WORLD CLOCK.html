@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en" data-theme="dark" style="scroll-behavior: smooth;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORLD CLOCK</title>
+    <link rel="stylesheet" href="./WORLD CLOCK_files/style.css">
+<!-- Code injected by Five-server -->
+  <script async="" data-id="five-server" data-file="c:\Users\Saanvi verma\Desktop\Classroom 2\index.html" type="application/javascript" src="./WORLD CLOCK_files/fiveserver.js.download"></script>
+  <style>      
+      /* Injected by five-server */
+      /*[data-highlight="true"] {
+        border: 1px rgb(90,170,255) solid !important;
+        background-color: rgba(155,215,255,0.5);
+        animation: fadeOutHighlight 1s forwards 0.5s;
+      }
+      img[data-highlight="true"] {
+        filter: sepia(100%) hue-rotate(180deg) saturate(200%);
+        animation: fadeOutHighlightIMG 0.5s forwards 0.5s;
+      }*/
+      @keyframes fadeOutHighlight {
+        from {background-color: rgba(155,215,255,0.5);}
+        to {background-color: rgba(155,215,255,0);}
+      }      
+      @keyframes fadeOutHighlightIMG {
+        0% {filter: sepia(100%) hue-rotate(180deg) saturate(200%);}
+        33% {filter: sepia(66%) hue-rotate(180deg) saturate(100%);}
+        50% {filter: sepia(50%) hue-rotate(90deg) saturate(50%);}
+        66% {filter: sepia(33%) hue-rotate(0deg) saturate(100%);}
+        100% {filter: sepia(0%) hue-rotate(0deg) saturate(100%);}
+      }
+      @keyframes fiveserverInfoPopup {
+        0%   {top:-40px;}
+        15%  {top:4px;}
+        85%  {top:4px;}
+        100% {top:-40px;}
+      }
+      /*smaller*/
+      @media (max-width: 640px) {
+        #fiveserver-info-wrapper {
+          max-width: 98%;
+        }
+        #fiveserver-info {
+          border-radius: 0px;
+        }      
+      }
+
+      </style></head>
+<body>
+    <header role="banner" aria-label="Application header">
+  <div class="brand" tabindex="0" aria-label="World Clock Application Brand">World Clock</div>
+  <button class="theme-toggle" aria-label="Switch to light mode" title="Switch to light mode" id="themeToggle" type="button">
+    <span class="material-icons" aria-hidden="true" id="themeIcon">dark_mode</span>
+  </button>
+</header>
+
+<button aria-label="Toggle Navigation Menu" class="sidebar-toggle" id="sidebarToggle" title="Toggle Navigation Menu" type="button" aria-expanded="false">
+  <span class="material-icons" aria-hidden="true">menu</span>
+</button>
+
+<aside class="sidebar" role="navigation" aria-label="City timezones navigation" id="sidebar" tabindex="-1">
+  <div class="sidebar-header" id="sidebarHeader">Select Cities</div>
+  <nav class="cities-list" aria-live="polite" id="citiesList" tabindex="0"><button type="button" class="city-item" aria-pressed="true" title="Remove New York, USA from your selection">New York, USA</button><button type="button" class="city-item" aria-pressed="true" title="Remove London, UK from your selection">London, UK</button><button type="button" class="city-item" aria-pressed="true" title="Remove Tokyo, Japan from your selection">Tokyo, Japan</button><button type="button" class="city-item" aria-pressed="true" title="Remove Sydney, Australia from your selection">Sydney, Australia</button><button type="button" class="city-item" aria-pressed="true" title="Remove Moscow, Russia from your selection">Moscow, Russia</button><button type="button" class="city-item" aria-pressed="true" title="Remove Delhi, India from your selection">Delhi, India</button><button type="button" class="city-item" aria-pressed="true" title="Remove Rio de Janeiro, Brazil from your selection">Rio de Janeiro, Brazil</button><button type="button" class="city-item" title="Add a new city" style="color: var(--color-primary-dark); font-weight: 800; border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 12px; cursor: pointer;">+ Add City</button></nav>
+</aside>
+
+<main class="content" id="mainContent" tabindex="0" role="main" aria-label="World Clocks Display Area" aria-live="polite" aria-atomic="true"><article class="clock-card" tabindex="0" role="region" aria-label="Current time in New York, USA"><h2 class="city-name">New York, USA</h2><time class="clock-time" datetime="2025-06-18T07:41:45.920Z">03:41:45 GMT-4</time><div class="clock-date">Wed, 18 Jun, 2025</div></article><article class="clock-card" tabindex="0" role="region" aria-label="Current time in London, UK"><h2 class="city-name">London, UK</h2><time class="clock-time" datetime="2025-06-18T07:41:45.920Z">08:41:45 GMT+1</time><div class="clock-date">Wed, 18 Jun, 2025</div></article><article class="clock-card" tabindex="0" role="region" aria-label="Current time in Tokyo, Japan"><h2 class="city-name">Tokyo, Japan</h2><time class="clock-time" datetime="2025-06-18T07:41:45.920Z">16:41:45 GMT+9</time><div class="clock-date">Wed, 18 Jun, 2025</div></article><article class="clock-card" tabindex="0" role="region" aria-label="Current time in Sydney, Australia"><h2 class="city-name">Sydney, Australia</h2><time class="clock-time" datetime="2025-06-18T07:41:45.920Z">17:41:45 GMT+10</time><div class="clock-date">Wed, 18 Jun, 2025</div></article><article class="clock-card" tabindex="0" role="region" aria-label="Current time in Moscow, Russia"><h2 class="city-name">Moscow, Russia</h2><time class="clock-time" datetime="2025-06-18T07:41:45.920Z">10:41:45 GMT+3</time><div class="clock-date">Wed, 18 Jun, 2025</div></article><article class="clock-card" tabindex="0" role="region" aria-label="Current time in Delhi, India"><h2 class="city-name">Delhi, India</h2><time class="clock-time" datetime="2025-06-18T07:41:45.920Z">13:11:45 IST</time><div class="clock-date">Wed, 18 Jun, 2025</div></article><article class="clock-card" tabindex="0" role="region" aria-label="Current time in Rio de Janeiro, Brazil"><h2 class="city-name">Rio de Janeiro, Brazil</h2><time class="clock-time" datetime="2025-06-18T07:41:45.920Z">04:41:45 GMT-3</time><div class="clock-date">Wed, 18 Jun, 2025</div></article></main>
+
+<footer role="contentinfo" aria-label="Application footer">
+  <div class="footer-left">
+    <span>© 2024 World Clock App</span>
+  </div>
+  <div class="footer-right">
+    <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub Repository" class="social-link">
+      <span class="material-icons">code</span>
+    </a>
+    <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter Profile" class="social-link">
+      <span class="material-icons">twitter</span>
+    </a>
+  </div>
+</footer>
+<script src="./WORLD CLOCK_files/app.js.download"></script>
+
+
+
+</body></html>
